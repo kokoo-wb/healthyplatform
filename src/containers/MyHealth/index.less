@@ -1,0 +1,123 @@
+/******我的体质******/
+.my-health{
+    background: #fff;
+    .header{
+        padding: 0.3rem 0.3rem 0;
+        .title{
+            line-height: 0.6rem;
+            font-size: 0.44rem;
+            font-weight: bold;
+            color: #D0021B;
+            text-align: center;
+            margin: 0 0 0.3rem;
+        }
+        p{
+            display: flex;
+            justify-content: flex-start;
+            line-height: 0.4rem;
+            label{
+                display: inline-block;
+                width: 1.4rem;
+                font-size: 0.28rem;
+                color: #3B424E;
+            }
+            i{
+                display: inline-block;
+                min-width: 4rem;
+                font-style: normal;
+                font-size: 0.28rem;
+                color: #999;
+            }
+            &.birthday{
+                margin-bottom: 0.5rem;
+            }
+            &.blood-type{
+                i{
+                    color: #F17F7F;
+                }
+            }
+            &.weak-organ{
+                i{
+                    color: #FFD13E;
+                }
+            }
+        }
+    }
+    .health-intro{
+        border: 0.04rem solid #EADCDC;
+        border-radius: 0.16rem;
+        padding: 0.3rem 0.26rem 1rem;
+        background: #fff;
+        margin: 1.4rem 0.3rem 0;
+        position: relative;
+        .icon{
+            text-align: center;
+            margin-top: -1.2rem;
+            margin-bottom: 0.5rem;
+            img{
+                width: 2.02rem;
+                height: 2.02rem;
+                margin: 0 0.1rem;
+            }
+        }
+        h4{
+            font-size: 0.36rem;
+            color: #3B424E;
+            line-height: 0.5rem;
+            margin-bottom: 0.1rem;
+        }
+        p{
+            font-size: 0.30rem;
+            color: #666B74;
+            line-height: 0.4rem;
+            margin-bottom: 0.5rem;
+            &.more{
+               color: #E7679D; 
+               padding: 0 0.1rem;
+            }
+        }
+        .other{
+            display: flex;
+            justify-content: center;
+            .code{
+                display: inline-block;
+                width: 2.45rem;
+                height: 4.13rem;
+                border: 1px solid #ddd;
+                text-align: center;
+                margin-right: 0.2rem;
+                position: relative;
+                img{
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    margin-top: 1.4rem;
+                }
+                a{
+                    display: inline-block;
+                    width: 1.80rem;
+                    height: 0.56rem;
+                    border: 1px solid #ddd;
+                    font-size: 0.14rem;
+                    color: #81cbc4;
+                    position: absolute;
+                    left: 0.32rem;
+                    bottom: -0.28rem;
+                    background: #fff;
+                }
+            }
+            .shot{
+                display: inline-block;
+                margin-left: 0.2rem;
+                img{
+                    width: 2.84rem;
+                    height: 5.01rem;
+                }
+            }
+        }
+    }
+    .share-box{
+        margin-top: -1rem;
+        position: relative;
+        z-index: 999;
+    }
+}

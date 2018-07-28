@@ -1,0 +1,21 @@
+{
+    "presets": [
+        "env",
+        "stage-0",
+        "react"
+    ],
+    "plugins": [
+        "transform-regenerator",
+        "transform-decorators-legacy",
+        "syntax-dynamic-import",
+        "transform-runtime",
+        "transform-object-rest-spread",
+        [
+            "import",
+            {
+                "libraryName": "antd-mobile",
+                "style": "css"
+            }
+        ]
+    ]
+}

@@ -1,0 +1,91 @@
+.select-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem 0rem;
+    box-sizing: border-box;
+    align-items: center;
+    background: #f6f5f8;
+    min-height: 100%;
+
+    .national-area-list {      
+        margin-bottom: 1rem;
+        li {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background: #fff;
+            margin-bottom: 0.2rem;
+            min-height: 1.76rem;
+            width: 6.3rem;
+            border-radius: 0.1rem;
+            padding: 0 0.3rem;
+            color: #666b74;
+
+            p {
+                font-size: 0.24rem;
+                line-height: 0.4rem;
+                text-align: left;
+                &:nth-child(1) {
+                    color: #000;
+                    font-weight: bold;
+                    font-size: 0.28rem;
+                }
+            }
+        }
+    }
+
+    .cancel-btn {
+        height: 1rem;
+        text-align: center;
+        border-top: 1px solid #e8e8e8;
+        background: #fff;
+        line-height: 1rem;
+        position: fixed;
+        bottom: 0;
+        width: 7.5rem;
+    }
+}
+
+.national-area-select {
+    :global(.select-box) {
+        height: 44px; 
+        background: #fff; 
+        border: 1px solid #ccc; 
+        border-radius: 0.1rem; 
+        display: flex; 
+        margin-bottom: 10px; 
+        align-items: center; 
+        font-size: 17px; 
+        padding-left: 15px; 
+        justify-content: space-between; 
+        position: relative;
+
+        :global(.select-value) {
+            color: #888; 
+            width: 47%; 
+            margin-right: 37px; 
+            text-align: right; 
+            text-overflow: ellipsis; 
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        :global(.select-ico-arrow) {
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            right: 13px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url('../../statics/images/right_arrow.svg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+
+
+

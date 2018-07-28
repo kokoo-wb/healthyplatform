@@ -1,0 +1,83 @@
+/* *
+* iTouch App webview common css
+* author: zhuhuishao
+* 主要功能: 实现全局通用样式抽取
+* */
+
+@charset "utf-8";
+
+html,
+body{
+	height:100%;
+	/* font-family: '微软雅黑'; */
+	font-family: 'PingFang SC','Microsoft YaHei',Helvetica,Arial,sans-serif; 
+	-webkit-overflow-scrolling: touch;
+	color:#282828;
+    -webkit-tap-highlight-color: transparent;
+    font-weight: normal;
+    background: #fafafa;
+}
+.bottomSpace{
+		padding-bottom: 1rem;
+}
+
+/* * 边距 * */
+*{ margin:0;padding:0; }
+
+/* * img * */
+img { border:none; }
+
+/* * padding * */
+
+/* * 字体大小 * */
+
+/* * 浮动 * */
+.fl{ float: left; }
+.fr{ float: right; }
+.clear-both{ clear: both; }
+
+/* * display * */
+.d-none{display: none;}
+
+/* * ul * */
+ul{padding: 0;list-style-type: none;}
+
+/* * 浮动 * */
+p{margin: 0;}
+
+/*input,button,textarea{ font-family: STHeiti,'Microsoft YaHei',Helvetica,Arial,sans-serif; -webkit-appearance: none;}*/
+input,button,textarea{ font-family: 'PingFang SC','Microsoft YaHei',Helvetica,Arial,sans-serif; -webkit-appearance: none;}
+                    
+
+/* * 去除滚动条 * */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+::-webkit-search-cancel-button { display: none; }
+
+
+::-webkit-input-placeholder { 
+    color: #ccc;  
+} 
+
+body{
+	word-wrap:break-word; 
+	word-break:normal; 
+}
+
+@media all and (min-width: 750px){
+    body{
+        width: 750px;
+        margin: 0 auto !important;
+    }
+}
+
+@media all and (max-width: 320px){
+    body{
+        width: 320px;
+        margin: 0 auto !important;
+        overflow-x: hidden;
+    }
+}

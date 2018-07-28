@@ -1,0 +1,107 @@
+:global(.am-list-item.am-input-item) {
+    border-bottom: 1px solid #ddd;
+}
+
+:global(.am-list-item-middle) {
+    border-bottom: 1px solid #ddd;
+}
+
+.form-group {
+    border-top: 1px solid #ddd;
+    margin-bottom: 0.3rem;
+
+    &:first-child {
+        border: 0;
+    }
+
+    :global(.am-input-item)::after {
+        content: '';
+        background-image: url(../../statics/images/icon_pen.png);
+        width: 14px;
+        height: 14px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        float: right;
+        margin-right: 15px;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+    }
+
+    .label-require::before {
+        content: '*';
+        float: left;
+        color: #ff6663;
+    }    
+
+    .birth-time {
+        position: relative;
+        :global(.am-list-arrow) {
+            display: none;
+        }
+
+        :global(.am-list-extra) {
+            margin-right: 35px;
+            flex-basis: 40%;
+        }
+    }
+
+    .birth-time {
+        a {
+            display: block;
+            color: #8B572A;
+            background: #FFEB72;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 13px;
+            width: 44px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 5px;
+        }
+    }
+}
+
+.commit-btn {
+    width: 6.5rem;
+    height: 0.88rem;
+    background: #fd6454;
+    color: #fff;
+    display: block;
+    font-size: 0.38rem;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.88rem;
+    margin: 0.5rem auto;
+}
+
+
+.error-modal,
+.success-modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3b424e;
+    padding: 0.2rem 0;
+    font-size: 0.32rem;
+    img {
+        width: 0.96rem;
+    }
+}
+
+.error-modal {
+    p {
+        margin-top: 0.2rem;
+        span {
+            color: #ff6663;
+        }
+    }
+}
